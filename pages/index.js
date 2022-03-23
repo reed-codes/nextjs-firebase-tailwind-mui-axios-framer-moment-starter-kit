@@ -1,5 +1,8 @@
 import { Box } from "@mui/material";
+import AugustaBackground from "../components/augusta-background";
 import Banner from "../components/banner-section";
+import Brands from "../components/brands-section";
+import AboutUs from "../components/about-us-section";
 
 export default function Home() {
   return (
@@ -10,7 +13,11 @@ export default function Home() {
       }}
     >
       <Banner />
+      <Brands />
 
+      <AugustaBackground>
+        <AboutUs />
+      </AugustaBackground>
     </Box>
   );
 }
