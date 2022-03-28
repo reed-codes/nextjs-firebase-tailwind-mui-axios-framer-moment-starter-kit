@@ -1,48 +1,83 @@
-import { Typography } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 import { Box } from "@mui/system";
+import { Parallax } from "react-parallax";
 
-export default function ArticleCard() {
+export default function ArticleCard(props) {
+  const txt =
+    props.article.preview.length > 80
+      ? props.article.preview.substring(0, 80) + "..."
+      : props.article.preview;
+
   return (
     <Box
       sx={{
-        height: "300px",
+        height: "100%",
         width: "100%",
         background: "#d3802c",
         borderRadius: "10px",
         overflow: "hidden",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       <Box
         sx={{
-          height: "100px",
+          height: "130px",
+          minHeight: "130px",
           width: "100%",
+          background: "#000",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
-        <img
-          src={"http://www.augustatools.co.za/img/1.jpg"}
-          alt=""
+        <Parallax
           style={{
             height: "100%",
-            width: "100%",
-            objectFit: "cover",
+            width: "150%",
+            transform: "rotateZ(30deg)",
           }}
-        />
+          bgImageStyle={{
+            height: "100%",
+            width: "100%",
+            objectFit: "contain",
+          }}
+          bgStyle={{
+            height: "100%",
+            width: "100%",
+          }}
+          bgImage={props.article.poster}
+          bgImageAlt="the cat"
+          strength={50}
+        ></Parallax>
       </Box>
 
       <Box
         sx={{
           width: "100%",
           p: 2,
+          height: "100%",
+          border: "1px goldenrod solid",
+          display:'flex',
+          flexDirection:'column',
+          justifyContent:'space-between'
         }}
       >
         <Typography variant="h6" sx={{ mb: 1 }}>
-          Different Types of Drill Bits
+          {props.article.title}
+        </Typography>
+
+        <Typography paragraph sx={{ fontSize: "15px", opacity: 0.8 }}>
+          {txt}
         </Typography>
 
         <Typography paragraph>
-          {`When it comes to a broad application such as drilling, or the diverse
-          use of drilling equipment, it is essential that you utilise the best
-          tools and supplies available. Using the wr`}
+          <Button
+            variant="outlined"
+            size="small"
+            sx={{ color: "#fff", borderColor: "#fff" }}
+          >
+            Read more
+          </Button>
         </Typography>
       </Box>
     </Box>
