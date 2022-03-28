@@ -3,6 +3,7 @@ import AugustaBackground from "../components/augusta-background";
 import Banner from "../components/banner-section";
 import Brands from "../components/brands-section";
 import AboutUs from "../components/about-us-section";
+import Articles from "../components/articles-section";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 
       <AugustaBackground>
         <AboutUs />
+        <Articles/>
       </AugustaBackground>
     </Box>
   );

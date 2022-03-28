@@ -12,6 +12,7 @@
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@mui/icons-material": "^5.0.3",
+    "@mui/lab": "^5.0.0-alpha.74",
     "@mui/material": "^5.0.3",
     "axios": "^0.24.0",
     "class-name-prop": "^3.0.0",

@@ -6,15 +6,15 @@ const AugustaBackground = ({ children }) => {
   return (
     <Box
       sx={{
-        height: "1000px",
-        background: "100%",
+        width: "100%",
         background: "#1c1d1f",
-        backgroundSize: "cover",
         display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
         position: "relative",
         overflow: "hidden",
-        pt:"70px",
-        pb:"70px"
+        pt: "70px",
+        pb: "70px",
       }}
     >
       <img
@@ -28,6 +28,7 @@ const AugustaBackground = ({ children }) => {
           left: 0,
           zIndex: 0,
           opacity: 0.1,
+          objectFit:'cover'
         }}
       />
 
