@@ -99,7 +99,7 @@ const WideScreenNavbar = () => {
         <NavTabLink title="Home" route="/" />
         <NavTabLink title="About Us" route="/#about-us" />
         <NavTabLink title="Articles" route="/articles" />
-        <NavTabLink title="Products" route="/productst" />
+        <NavTabLink title="Products" route="/products" />
         <NavTabLink title="Contact Us" route="/contact" />
       </Box>
 

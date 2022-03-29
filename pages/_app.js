@@ -1,15 +1,14 @@
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import Nav from "../components/nav";
-import { StyledEngineProvider } from "@mui/material/styles";
+import Footer from "../components/footer-section";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <StyledEngineProvider injectFirst>
         <Nav />
         <Component {...pageProps} />
-      </StyledEngineProvider>
+        <Footer/>
     </>
   );
 }
