@@ -97,12 +97,8 @@ export default function Articles() {
                       overflow: "hidden",
                     }}
                   >
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      sx={{ color: "#fff", borderColor: "#fff" }}
-                    >
-                      view more
+                    <Button sx={{ color: "#f79633", fontWeight: 700 }}>
+                      More Articles
                     </Button>
                   </Box>
                 </Grid>

@@ -4,6 +4,8 @@ import Banner from "../components/banner-section";
 import Brands from "../components/brands-section";
 import AboutUs from "../components/about-us-section";
 import Articles from "../components/articles-section";
+import Products from "../components/products-section";
+import Footer from "../components/footer-section";
 
 export default function Home() {
   return (
@@ -18,8 +20,11 @@ export default function Home() {
 
       <AugustaBackground>
         <AboutUs />
-        <Articles/>
+        <Articles />
       </AugustaBackground>
+      <Products />
+      <br/>
+      <Footer />
     </Box>
   );
 }

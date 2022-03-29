@@ -72,9 +72,8 @@ export default function ArticleCard(props) {
 
         <Typography paragraph>
           <Button
-            variant="outlined"
             size="small"
-            sx={{ color: "#fff", borderColor: "#fff" }}
+            sx={{ color: "#fff", borderColor: "#fff", fontSize:"10px" }}
           >
             Read more
           </Button>
